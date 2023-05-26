@@ -24,7 +24,7 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
-    return "It's a tie!";
+    return "IT'S A TIE!";
   } else if (
     (playerSelection === "rock" && computerSelection === "scissors") ||
     (playerSelection === "paper" && computerSelection === "rock") ||
@@ -32,10 +32,10 @@ function playRound(playerSelection, computerSelection) {
   ) {
     playerScore++;
     playerScoreEl.textContent = playerScore;
-    return "You win! " + playerSelection + " beats " + computerSelection;
+    return "YOU WIN! " + playerSelection + " beats " + computerSelection;
   } else {
     computerScore++;
     computerScoreEl.textContent = computerScore;
-    return "You lose!" + computerSelection + " beats " + playerSelection;
+    return "YOU LOSE! " + computerSelection + " beats " + playerSelection;
   }
 }
